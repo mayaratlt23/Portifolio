@@ -1,0 +1,261 @@
+/* ADICIONANDO A FONTE QUE VAI UTILIZAR NA PÁGINA */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat';
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+/* IMAGEM DE FUNDO */
+#inicio {
+   background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("imagens/fundo.jpg");
+   background-size: cover;
+   background-position: center center;
+   height: 100vh;
+}
+
+/* CABEÇALHO */
+#inicio .conteiner header{
+   background-color: rgba(0, 0, 0, .8);
+   position: fixed;
+   width: 100%;
+   z-index: 100;
+   top: 0;
+}
+
+/* PARA ALINHAR O MENU */
+#inicio .conteiner header .conteiner-header {
+   max-width: 1100px;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+}
+
+/* CONFIGURAÇÃO DO NOME LADO SUPERIOR ESQUERDO */
+#inicio .conteiner header .conteiner-header h1 {
+   text-align: center;
+   color: #ff5080;
+}
+
+/* ALINHAR OS NOMES DA NAVEGAÇÃO E ESTILIZAR */
+#inicio .conteiner header .conteiner-header nav ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+}
+#inicio .conteiner header .conteiner-header nav ul li a {
+   text-decoration: none;
+   color: #fff;
+   margin: 0 12px;
+   font-weight: 400;
+   transition: .5s;
+}
+
+/* PARA FAZER O EFEITO DE PASSAR O MOUSE EM CIMA DA LETRA E MUDAR DE COR */
+#inicio .conteiner header .conteiner-header nav ul a:hover{
+   color: #ff5080;
+}
+
+/* TROCAR A COR DOS ÍCONES DA REDES SOCIAIS PARA BRANCO */
+#inicio .conteiner header .conteiner-header .redes a{
+   text-decoration: none;
+   color: #fff;
+   display: inline-block;
+   margin-left: 10px;
+   transition: .5s;
+}
+/* PARA DAR O EFEITO DE PASSAR O MOUSE EM CIMA E MUDAR A COR DOS ÍCONES DAS REDES SOCIAIS */
+#inicio .conteiner header .conteiner-header .redes a:hover{
+   color: #ff5080;
+}
+
+/* CONFIGURAÇÃO DO TEXTO DE APRESENTAÇÃO */
+#inicio .conteiner .apresentacao{
+   max-width: 1100px;
+   height: 100vh;
+   margin: auto;
+   color:  #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* CONFIGURAÇÃO DO NOME BEM-VINDOS */
+#inicio .conteiner .apresentacao .bemvindos{
+font-size: 16px;
+margin-bottom: 20px;
+text-transform: uppercase;
+letter-spacing: 5px;
+}
+
+/* CONFIGURAÇÃO DO "SOU MAYARA TALITA..." */
+#inicio .conteiner .apresentacao h2 {
+   font-size: 30px;
+   margin-bottom: 25px;
+   text-align: center;
+}
+
+/* PARA DEIXAR SÓ O NOME "MAYARA TALITA" MENOR E TROCAR DE COR */
+#inicio .conteiner .apresentacao h2 span{
+   font-size: 30px;
+   color: #ff5080;
+}
+
+/* FORMATAÇÃO DO TEXTO SOBRE MIM */
+#inicio .conteiner .apresentacao .descricao{
+   max-width: 700px;
+   margin: 25px auto;
+   font-size: 18px;
+   text-align: center;
+}
+
+ /* CONFIGURAÇÃO DO BOTÃO "IR A PORTIFÓLIO" */
+ #inicio .conteiner .apresentacao a{
+   text-decoration: none;
+   display: inline-block;
+   margin: 25px;
+   padding: 20px 25px;
+   border: 2px solid #fff;
+   border-radius: 50px;
+   color: #fff;
+   font-weight: bold;
+   text-transform: uppercase;
+   transition: .5s;
+ }
+
+ /* EFEITO DE PASSAR O MOUSE E MUDAR A COR DO BOTÃO "IR AO PORTIFÓLIO" */
+ #inicio .conteiner .apresentacao a:hover{
+   background-color: #ff5080;
+ }
+
+ /* EFEITO DE PASSAR O MOUSE EM CIMA E TROCAR A COR */
+ #icone-nav{
+   color: #fff;
+   display: none;
+ }
+
+ /* !!!!!!! SEÇÃO SOBRE MIM !!!!! */
+ #sobremim{
+   max-width: 1100px;
+   margin: auto;
+   padding: 100px 15px;
+   color: #111135;
+   display: flex;
+ }
+
+ /* ESTILIZAÇÃO DO TEXTO SOBRE MIM */
+ #sobremim .conteiner-foto{
+   max-width: 400px;
+   margin-right: 80px;
+ }
+
+ /* ESTILIZAÇÃO DA FOTO DE PERFIL */
+ #sobremim .conteiner-foto img{
+   padding: 20px;
+   width: 100%;
+   border-radius: 10px;
+   background-color: #ebebeb;
+ }
+
+ #sobremim .sobremim{
+   margin: 0 40px;
+ }
+
+ /* ESTILIZAR O NOME "SOBRE MIM" */
+ #sobremim .sobremim .titulo-secao{
+   font-size: 22px;
+   text-transform: uppercase;
+   color: #111135;
+   text-decoration: underline; 
+   text-decoration-color: #d3d3d3;
+   text-decoration-thickness: 5px;
+ }
+
+ /* ESTILIZAR O NOME ABAIXO DO SOBRE MIM */
+ #sobremim .sobremim h2{
+   font-size: 34px;
+   font-weight: bold;
+   margin: 20px 0;
+   letter-spacing: 2px;
+ }
+
+ /* COLOCAR COR NO NOME "MAYRA TALITA" DO H2 */
+ #sobremim .sobremim h2 span{
+   color: #ff5080;
+ }
+
+ /* ESTILIZAR O "DESENVOLVEDORA FRONT END" */
+ #sobremim .sobremim h3{
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   letter-spacing: 1px;
+ }
+
+ /* ESTILIZAR O PARÁGRAFO */
+  #sobremim .sobremim p{
+   font-size: 14px;
+   line-height: 25px;
+   color: #565656;
+   margin-bottom: 12px;
+  }
+
+  /* ESTILIZAR O BOTÃO DO CV */
+ #sobremim .sobremim a{
+   display: inline-block;
+   text-decoration: none;
+   color: #000;
+   border-radius: 30px;
+   padding: 10px 20px;
+   border: 1px solid #000;
+   margin-top: 30px;
+   transition: .5s;
+ }
+
+ /* EFEITO DE PASSAR O MOUSE E TROCAR A COR NO BOTÃO DO CV */
+ #sobremim .sobremim a:hover{
+   background-color: #ff5080;
+   color: #fff;
+ }
+
+ /* !!!!!  SECÃO CURSOS !!!!! */
+#cursos{
+   padding: 100px 15px;
+   text-align: center;
+   background-color: #f3f3f3;
+} 
+
+/* ESTILIZAR NOME "MEUS CURSOS*/                         
+#cursos .titulo-secao{
+   font-size: 22px;
+   text-transform: uppercase;
+   color: #111135;
+   text-decoration: underline;
+   text-decoration-color: #d3d3d3;
+   text-decoration-thickness: 5px;
+}
+
+#linha .curso{
+   display: flex;
+   justify-content: space-between;
+   max-width: 1100px;
+   margin: 30px auto;
+}
+
+#curso .linha .cursos{
+   max-width: 350px;
+   background-color: #fff;
+   padding: 30px;
+   margin: 0 5px;
+   border-radius: 5px;
+   transition: .5s;
+}
